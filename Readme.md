@@ -5,16 +5,18 @@
      src="https://raw.githubusercontent.com/bmcmahen/react-dnd-grid/master/demo.gif">
 </div>
 
-# react-grid-drag
+# react-grid-drag-transpose
+
+Modified from [react-grid-drag](https://www.npmjs.com/package/react-grid-drag)
 
 ## Features
 - **Supports dragging between arbitrary number of lists**.
 
 ## Install
-Install `react-grid-drag` and `react-gesture-responder` using yarn or npm.
+Install `react-grid-drag-transpose` and `react-gesture-responder` using yarn or npm.
 
 ```
-yarn add react-grid-drag react-gesture-responder
+yarn add react-grid-drag-transpose react-gesture-responder
 ```
 
 ## Usage
@@ -27,7 +29,7 @@ import {
   GridDropZone,
   GridItem,
   swap
-} from "react-grid-drag";
+} from "react-grid-drag-transpose";
 
 function Example() {
   const [items, setItems] = React.useState([1, 2, 3, 4]); // supply your own state
@@ -73,7 +75,7 @@ import {
   GridItem,
   swap,
   move
-} from "react-grid-drag";
+} from "react-grid-drag-transpose";
 
 function App() {
   const [items, setItems] = React.useState({

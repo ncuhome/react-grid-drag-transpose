@@ -1,10 +1,11 @@
-import resolve from "rollup-plugin-node-resolve";
-import filesize from "rollup-plugin-filesize";
-import pkg from "./package.json";
-import commonjs from "rollup-plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import json from "@rollup/plugin-json";
 import cleanup from "rollup-plugin-cleanup";
-import json from "rollup-plugin-json";
+import filesize from "rollup-plugin-filesize";
 import typescript from "rollup-plugin-typescript2";
+
+import pkg from "./package.json";
 
 const input = "src/index.ts";
 

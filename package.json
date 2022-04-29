@@ -1,6 +1,6 @@
 {
   "name": "react-grid-drag-transpose",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "grid style drag and drop for react, transpose to vertical",
   "main": "cjs/index.js",
   "module": "esm/index.js",

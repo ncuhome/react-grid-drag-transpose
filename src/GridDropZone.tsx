@@ -113,11 +113,7 @@ export function GridDropZone({
               traverse.targetIndex === i;
 
             const order = placeholder
-              ? swap(
-                  itemsIndexes || [],
-                  placeholder.startIndex,
-                  placeholder.targetIndex
-                )
+              ? swap(itemsIndexes || [], placeholder.startIndex, placeholder.targetIndex)
               : itemsIndexes;
 
             const pos = getPositionForIndex(
@@ -169,8 +165,8 @@ export function GridDropZone({
                   !placeholder
                 ) {
                   setPlaceholder({
-                    targetIndex,
-                    startIndex: i
+                    targetIndex: i,
+                    startIndex: targetIndex
                   });
                 }
               } else if (placeholder) {

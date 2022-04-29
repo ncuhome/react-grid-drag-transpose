@@ -269,7 +269,7 @@ function TransformExample() {
 }
 
 function ReadmeExample() {
-  const [items, setItems] = React.useState([1, 2, 3, 4]); // supply your own state
+  const [items, setItems] = React.useState([1, 2, 3, 4, 5, 6, 7]); // supply your own state
 
   // target id will only be set if dragging from one dropzone to another.
   function onChange(

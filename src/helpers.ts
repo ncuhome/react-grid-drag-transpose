@@ -42,8 +42,8 @@ export function getPositionForIndex(
 ) {
   const index =
     typeof traverseIndex == "number" ? (i >= traverseIndex ? i + 1 : i) : i;
-  const x = (index % boxesPerRow) * columnWidth;
-  const y = Math.floor(index / boxesPerRow) * rowHeight;
+  const x = Math.floor(index / boxesPerRow) * columnWidth;
+  const y = (index % boxesPerRow) * rowHeight;
   return {
     xy: [x, y]
   };
@@ -64,7 +64,7 @@ export function getIndexFromCoordinates(
   count: number
 ) {
   const index =
-    Math.floor(y / rowHeight) * boxesPerRow + Math.floor(x / columnWidth);
+    Math.floor(y / rowHeight) + Math.floor(x / columnWidth) * boxesPerRow;
   return index >= count ? count : index;
 }
 
